@@ -6,9 +6,18 @@
  */
 UIController::UIController(QObject *parent) : QObject(parent)
 {
+    //Initialize start menu
+    startMenu = new StartMenu();
+    startMenu->show();
     //Initialize the main window with its components
-    mainWindow = new MainWindow();
-    mainWindow->show();
+//    mainWindow = new MainWindow();
+//    mainWindow->show();
+//    main
+
+
+
+//    startMenu->setModal(true);
+//    startMenu->exec();
 
     //Seeding the value for a random
     qsrand(time(NULL));
@@ -59,10 +68,10 @@ void UIController::processSpaceKeyPress()
 
         //Let flowers appear and move in the scene
         cFlowerTimer->start(MIN_TIME_IN_MIL);
-        mFlowerTimer->start(FLOWER_DEFAULT_SPEED);
+        mFlowerTimer->start(flowerSpeed);
 
         //Let the bird free fall
-        gBirdTimer->start(BIRD_FALLING_SPEED);
+        gBirdTimer->start(birdFallingSpeed);
 
         //Put the bird in the right position to start the game
         mainWindow->play();
@@ -74,7 +83,7 @@ void UIController::processSpaceKeyPress()
         mainWindow->flyUpBird();
 
         //Start free-fall again
-        gBirdTimer->start(BIRD_FALLING_SPEED);
+        gBirdTimer->start(birdFallingSpeed);
     }
 
 }
@@ -95,6 +104,16 @@ void UIController::processCollision()
 
     //Stop handling key press events -> Stop fly up the bird
     disconnect(mainWindow,SIGNAL(pressSpaceKey()),this,SLOT(processSpaceKeyPress()));
+}
+
+/**
+ * Reference to the function declaration
+ * @brief UIController::changeDifficulty
+ */
+void UIController::changeDifficulty(int fspeed, int bspeed)
+{
+    flowerSpeed = fspeed;
+    birdFallingSpeed = bspeed;
 }
 
 
