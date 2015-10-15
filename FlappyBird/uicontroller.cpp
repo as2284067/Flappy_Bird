@@ -9,15 +9,10 @@ UIController::UIController(QObject *parent) : QObject(parent)
     //Initialize start menu
     startMenu = new StartMenu();
     startMenu->show();
+
     //Initialize the main window with its components
-//    mainWindow = new MainWindow();
-//    mainWindow->show();
-//    main
-
-
-
-//    startMenu->setModal(true);
-//    startMenu->exec();
+    mainWindow = new MainWindow();
+    mainWindow->show();
 
     //Seeding the value for a random
     qsrand(time(NULL));

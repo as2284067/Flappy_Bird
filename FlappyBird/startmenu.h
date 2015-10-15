@@ -2,8 +2,6 @@
 #define STARTMENU_H
 
 #include <QDialog>
-#include "mainscene.h"
-#include "uicontroller.h"
 
 namespace Ui {
 class StartMenu;
