@@ -5,7 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
-
+QT += multimedia
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = FlappyBird
@@ -16,15 +16,18 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     mainscene.cpp \
     uicontroller.cpp \
-    startmenu.cpp
+    startmenu.cpp \
+    rawscore.cpp
 
 HEADERS  += mainwindow.h \
     mainscene.h \
     uicontroller.h \
-    startmenu.h
+    startmenu.h \
+    tuberecord.h \
+    rawscore.h
 
 FORMS    += mainwindow.ui \
     startmenu.ui
 
 RESOURCES += \
-    images.qrc
+    images.qrc \

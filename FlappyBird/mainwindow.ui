@@ -23,13 +23,16 @@
    <double>1.000000000000000</double>
   </property>
   <widget class="QWidget" name="centralWidget">
+   <property name="cursor">
+    <cursorShape>CrossCursor</cursorShape>
+   </property>
    <widget class="QGraphicsView" name="graphicsView">
     <property name="geometry">
      <rect>
       <x>9</x>
-      <y>9</y>
-      <width>500</width>
-      <height>500</height>
+      <y>18</y>
+      <width>501</width>
+      <height>471</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -50,8 +53,14 @@
     <property name="mouseTracking">
      <bool>false</bool>
     </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
     <property name="acceptDrops">
      <bool>false</bool>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
     </property>
     <property name="verticalScrollBarPolicy">
      <enum>Qt::ScrollBarAlwaysOff</enum>
@@ -60,10 +69,117 @@
      <enum>Qt::ScrollBarAlwaysOff</enum>
     </property>
     <property name="sizeAdjustPolicy">
-     <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+     <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+    <property name="viewportUpdateMode">
+     <enum>QGraphicsView::FullViewportUpdate</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>230</y>
+      <width>191</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Press the Space Bar to Begin</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
     </property>
    </widget>
   </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>520</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPreferences">
+    <property name="title">
+     <string>Preferences</string>
+    </property>
+    <widget class="QMenu" name="menuDifficulty">
+     <property name="title">
+      <string>Difficulty</string>
+     </property>
+     <addaction name="actionEasy_2"/>
+     <addaction name="actionMedium_2"/>
+     <addaction name="actionHard_2"/>
+    </widget>
+    <widget class="QMenu" name="menuSound">
+     <property name="title">
+      <string>Sound</string>
+     </property>
+     <addaction name="actionMusic_2"/>
+     <addaction name="actionEffects_2"/>
+    </widget>
+    <addaction name="menuDifficulty"/>
+    <addaction name="menuSound"/>
+   </widget>
+   <addaction name="menuPreferences"/>
+  </widget>
+  <action name="actionDifficulty">
+   <property name="text">
+    <string>Difficulty</string>
+   </property>
+  </action>
+  <action name="actionEasy">
+   <property name="text">
+    <string>Easy</string>
+   </property>
+  </action>
+  <action name="actionMedium">
+   <property name="text">
+    <string>Medium</string>
+   </property>
+  </action>
+  <action name="actionHard">
+   <property name="text">
+    <string>Hard</string>
+   </property>
+  </action>
+  <action name="actionMusic">
+   <property name="text">
+    <string>Music</string>
+   </property>
+  </action>
+  <action name="actionEffects">
+   <property name="text">
+    <string>Effects</string>
+   </property>
+  </action>
+  <action name="actionEasy_2">
+   <property name="text">
+    <string>Easy</string>
+   </property>
+  </action>
+  <action name="actionMedium_2">
+   <property name="text">
+    <string>Medium</string>
+   </property>
+  </action>
+  <action name="actionHard_2">
+   <property name="text">
+    <string>Hard</string>
+   </property>
+  </action>
+  <action name="actionMusic_2">
+   <property name="text">
+    <string>Music</string>
+   </property>
+  </action>
+  <action name="actionEffects_2">
+   <property name="text">
+    <string>Effects</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

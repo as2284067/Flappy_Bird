@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QTimer>
 #include "mainscene.h"
+#include <QDialog>
+#include <QMediaPlayer>
 
 namespace Ui {
 class MainWindow;
@@ -25,6 +27,8 @@ private:
 
     /*Main UI*/
     Ui::MainWindow *ui;
+
+    QMediaPlayer* player;
 
     /*The fundamental graphics scene of the game*/
     MainScene *mainScene;    
@@ -63,6 +67,8 @@ public:
 
      /*This function asks main scene to let the bird fly-up when the GUI thread is running*/
     void flyUpBird();
+private slots:
+
 };
 
 #endif // MAINWINDOW_H

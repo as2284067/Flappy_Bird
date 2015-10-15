@@ -8,7 +8,6 @@
  */
 MainScene::MainScene(QObject *parent) : QGraphicsScene(parent)
 {
-
     /*Seeding the value for a random*/
     qsrand(time(NULL));
 

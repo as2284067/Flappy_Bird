@@ -6,13 +6,17 @@
 #include <QGraphicsPixmapItem>
 #include <ctime>
 #include <QLabel>
+#include <QDialog>
 #include <QGraphicsProxyWidget>
+#include <QString>
+#include <QMultimedia>
 
 /**
  * @brief The MainScene class
  * This is the main graphics scene of the game
  * It is used to manage all the moving items (the birds and flowers) as well as the background
  */
+
 class MainScene : public QGraphicsScene
 {
 
@@ -30,6 +34,8 @@ private:
     /*Path to the flappig bird image*/
     const QString FB_FILE_NAME = ":/Images/FlappingBird.gif";
 
+
+
     /*The minimum height of a flower in the scene*/
     const short MIN_FLOWER_HEIGHT = 150;
 
@@ -40,13 +46,13 @@ private:
     const float BIRD_PIC_SCALE = 0.1;
 
     /*The angle of the falling bird */
-    const qreal FREE_FALL_ANGLE = 90;
+    const qreal FREE_FALL_ANGLE = 100;
 
     /*The height that the bird will fall down after a certain period of time*/
-    const qreal FREE_FALL_DIST= 30;
+    const qreal FREE_FALL_DIST = 50;
 
     /*The height that the bird will fly up after a key-press*/
-    const qreal FLY_UP_DIST= 60;
+    const qreal FLY_UP_DIST = 90;
 
     /*The Background Image Object*/
     QImage bgImage;
@@ -78,6 +84,7 @@ private:
     /*Check if the bird is in the fly-up mode*/
     bool isFlyUp;
 
+
 public:
 
     /**
@@ -108,6 +115,9 @@ private:
     /*Creating a bird and putting it on the main scene*/
     void createABird(const QSize& birdSize);
 
+    //Media Player for Music
+    //QMediaPlayer* player;
+
 signals:
 
 
@@ -136,5 +146,6 @@ public:
     void checkForCollision();
 
 };
+
 
 #endif // MAINSCENE_H

@@ -1,4 +1,5 @@
 #include "uicontroller.h"
+#include "startmenu.h"
 
 /**
  *Reference to the function declaration
@@ -6,13 +7,16 @@
  */
 UIController::UIController(QObject *parent) : QObject(parent)
 {
-    //Initialize start menu
-    startMenu = new StartMenu();
-    startMenu->show();
 
     //Initialize the main window with its components
-    mainWindow = new MainWindow();
+    mainWindow = new MainWindow(0);
     mainWindow->show();
+    //Initialize start menu
+//    startMenu = new StartMenu(0);
+//    startMenu->setModal(true);
+//    startMenu->exec();
+
+
 
     //Seeding the value for a random
     qsrand(time(NULL));
@@ -76,6 +80,7 @@ void UIController::processSpaceKeyPress()
         //Stop free-fall for fly-up
         gBirdTimer->stop();
         mainWindow->flyUpBird();
+
 
         //Start free-fall again
         gBirdTimer->start(birdFallingSpeed);
