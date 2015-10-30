@@ -8,15 +8,6 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    //Media Player
-    player = new QMediaPlayer(this);
-    //This music file can be changed to any music file make sure is starts at /User
-    player->setMedia(QUrl::fromLocalFile("/Users/abelsmac/Desktop/FlappyBird/intro.mp3"));
-    //Volume is preset at 50 because we will not have a slider
-    player->setVolume(50);
-    //I have not finshed it, I will make the audio stop when paused and when the bird dies
-    player->play();
-
     //Set a permanent size for this main window and its graphics view
     setFixedSize(geometry().width(),geometry().height());
     ui->graphicsView->setFixedSize(ui->graphicsView->geometry().width()
@@ -59,6 +50,15 @@ void MainWindow::createFlowers()
 void MainWindow::play()
 {
     mainScene->play();
+    //Media Player
+    player = new QMediaPlayer(this);
+    //This music file can be changed to any music file make sure is starts at /User
+    player->setMedia(QUrl::fromLocalFile("/Users/abelsmac/Desktop/FlappyBird/intro.mp3"));
+    //Volume is preset at 50 because we will not have a slider
+    player->setVolume(38);
+    //I have not finshed it, I will make the audio stop when paused and when the bird dies
+    player->play();
+
 }
 
 /*Reference to the function declaration*/

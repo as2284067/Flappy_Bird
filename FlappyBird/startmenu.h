@@ -1,11 +1,9 @@
 #ifndef STARTMENU_H
 #define STARTMENU_H
 
-#include <QMenu>
-#include <QScrollBar>
+
 #include <QDialog>
-#include "mainscene.h"
-#include "uicontroller.h"
+
 
 namespace Ui {
 class StartMenu;
@@ -20,12 +18,10 @@ public:
     ~StartMenu();
 
 private slots:
-    /*This function starts the game when start is clicked*/
-    void on_startButton_clicked();
-
-    void on_quitButton_clicked();
 
     void on_difficultyComboBox_activated(const QString &arg1);
+
+    void on_BigStartButton_clicked();
 
 private:
     Ui::StartMenu *ui;

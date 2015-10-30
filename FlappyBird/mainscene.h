@@ -34,8 +34,6 @@ private:
     /*Path to the flappig bird image*/
     const QString FB_FILE_NAME = ":/Images/FlappingBird.gif";
 
-
-
     /*The minimum height of a flower in the scene*/
     const short MIN_FLOWER_HEIGHT = 150;
 
@@ -49,10 +47,10 @@ private:
     const qreal FREE_FALL_ANGLE = 100;
 
     /*The height that the bird will fall down after a certain period of time*/
-    const qreal FREE_FALL_DIST = 50;
+    const qreal FREE_FALL_DIST = 30;
 
     /*The height that the bird will fly up after a key-press*/
-    const qreal FLY_UP_DIST = 90;
+    const qreal FLY_UP_DIST = 60;
 
     /*The Background Image Object*/
     QImage bgImage;

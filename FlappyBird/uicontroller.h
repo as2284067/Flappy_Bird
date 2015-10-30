@@ -1,11 +1,8 @@
 #ifndef UICONTROLLER_H
 #define UICONTROLLER_H
 
-//#include "ui_startmenu.h"
 #include <QObject>
 #include <QTimer>
-//#include <QMenu>
-//#include <QMainWindow>
 #include "mainwindow.h"
 #include "startmenu.h"
 
@@ -36,7 +33,7 @@ private:
     MainWindow *mainWindow;
 
     /*The start menu*/
-    //Ui::StartMenu *startMenu;
+    StartMenu *startMenu;
 
     /*This timer is used for controlling the creation of flowers*/
     QTimer *cFlowerTimer;

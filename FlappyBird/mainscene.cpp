@@ -238,6 +238,7 @@ bool MainScene::hasCollision()
         for (int i = 0; i < flowers.size(); i++) {
             if (bird->collidesWithItem(flowers[i])){
                 return true;
+
             }
         }
     }
@@ -249,12 +250,15 @@ bool MainScene::hasCollision()
  * Reference to the declaration of this function
  * @brief MainScene::checkForCollision
  */
+
 void MainScene::checkForCollision()
 {
     if (hasCollision()){
 
         //Notify the UIController through the Main Window
         emit static_cast<MainWindow*>(this->parent())->processCollision();
+
+
 
         //Let the bird fall down completely
         bird->setPos(bird->pos().x(),sceneRect().bottom() - bird->geometry().height());

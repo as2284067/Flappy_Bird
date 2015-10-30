@@ -6,9 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>404</width>
-    <height>300</height>
+    <width>407</width>
+    <height>261</height>
    </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
@@ -55,32 +58,17 @@
     <item>
      <widget class="QComboBox" name="difficultyComboBox">
       <property name="currentText">
-       <string>Easy</string>
+       <string/>
       </property>
-      <item>
-       <property name="text">
-        <string>Easy</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Medium</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Hard</string>
-       </property>
-      </item>
      </widget>
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="startButton">
+  <widget class="QPushButton" name="BigStartButton">
    <property name="geometry">
     <rect>
      <x>160</x>
-     <y>240</y>
+     <y>200</y>
      <width>91</width>
      <height>31</height>
     </rect>
@@ -101,18 +89,16 @@
     <string>Start Game</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="quitButton">
+  <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>350</x>
+     <x>10</x>
      <y>10</y>
-     <width>41</width>
-     <height>31</height>
+     <width>381</width>
+     <height>221</height>
     </rect>
    </property>
-   <property name="text">
-    <string>X</string>
-   </property>
+   <layout class="QVBoxLayout" name="verticalLayout"/>
   </widget>
  </widget>
  <resources/>
