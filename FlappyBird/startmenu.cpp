@@ -33,4 +33,7 @@ void StartMenu::on_startButton_clicked()
         //high speed
         //uicontroller->changeDifficulty(18, 250);
     }
+
+    this->hide();
+
 }

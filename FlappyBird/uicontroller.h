@@ -5,6 +5,7 @@
 #include <QTimer>
 #include "mainwindow.h"
 #include "startmenu.h"
+#include "endmenu.h"
 
 /**
  * @brief The SceneController class
@@ -34,6 +35,9 @@ private:
 
     /*The start menu*/
     StartMenu *startMenu;
+
+    /*The end menu*/
+    EndMenu *endMenu;
 
     /*This timer is used for controlling the creation of flowers*/
     QTimer *cFlowerTimer;

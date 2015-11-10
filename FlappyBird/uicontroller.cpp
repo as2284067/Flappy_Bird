@@ -6,13 +6,17 @@
  */
 UIController::UIController(QObject *parent) : QObject(parent)
 {
+    //Initialize the main window with its components
+    mainWindow = new MainWindow();
+    mainWindow->hide();
+
     //Initialize start menu
     startMenu = new StartMenu();
     startMenu->show();
-
-    //Initialize the main window with its components
-    mainWindow = new MainWindow();
     mainWindow->show();
+
+    endMenu = new EndMenu();
+    endMenu->hide();
 
     //Seeding the value for a random
     qsrand(time(NULL));
@@ -99,6 +103,8 @@ void UIController::processCollision()
 
     //Stop handling key press events -> Stop fly up the bird
     disconnect(mainWindow,SIGNAL(pressSpaceKey()),this,SLOT(processSpaceKeyPress()));
+
+    endMenu->show();
 }
 
 /**

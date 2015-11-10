@@ -16,15 +16,18 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     mainscene.cpp \
     uicontroller.cpp \
-    startmenu.cpp
+    startmenu.cpp \
+    endmenu.cpp
 
 HEADERS  += mainwindow.h \
     mainscene.h \
     uicontroller.h \
-    startmenu.h
+    startmenu.h \
+    endmenu.h
 
 FORMS    += mainwindow.ui \
-    startmenu.ui
+    startmenu.ui \
+    endmenu.ui
 
 RESOURCES += \
     images.qrc
