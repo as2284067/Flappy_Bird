@@ -15,11 +15,11 @@ EndMenu::~EndMenu()
 
 void EndMenu::addPlayerInfo()
 {
-    players("players.txt");
-    if(!file.open(QIODevice::WriteOnly|QIODevice::Text))
+    players = new QFile("players.txt");
+    if(!players->open(QIODevice::WriteOnly|QIODevice::Text))
         return;
-    QTextStream out(&players);
-    out << ui->nameLineEdit->text();
+//    QTextStream out(&players);
+//    out << ui->nameLineEdit->text();
     //add score?
     //read file for highest score
     //close file?
