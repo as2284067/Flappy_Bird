@@ -3,24 +3,24 @@
 
 
 #include <QFile>
+#include <QTextStream>
 #include <QDialog>
 
 namespace Ui {
 class EndMenu;
 }
 
-class EndMenu : public QDialog
+class EndGMenu : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit EndMenu(QWidget *parent = 0);
-    ~EndMenu();
+    explicit EndGMenu(QWidget *parent = 0);
+    ~EndGMenu();
     void addPlayerInfo();
 
 private:
     Ui::EndMenu *ui;
-    QFile *players;
 };
 
 #endif // ENDMENU_H

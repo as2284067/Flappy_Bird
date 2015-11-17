@@ -1,25 +1,26 @@
 #include "endmenu.h"
 #include "ui_endmenu.h"
 
-EndMenu::EndMenu(QWidget *parent) :
+EndGMenu::EndGMenu(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::EndMenu)
 {
     ui->setupUi(this);
 }
 
-EndMenu::~EndMenu()
+EndGMenu::~EndGMenu()
 {
     delete ui;
 }
 
-void EndMenu::addPlayerInfo()
+void EndGMenu::addPlayerInfo()
 {
-    players = new QFile("players.txt");
-    if(!players->open(QIODevice::WriteOnly|QIODevice::Text))
+    QFile players("players.txt");
+    if(!players.open(QIODevice::WriteOnly|QIODevice::Text))
         return;
-//    QTextStream out(&players);
-//    out << ui->nameLineEdit->text();
+    QTextStream out(&players);
+    out << ui->nameLineEdit->text();
+    players.close();
     //add score?
     //read file for highest score
     //close file?

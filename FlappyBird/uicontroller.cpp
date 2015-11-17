@@ -15,7 +15,7 @@ UIController::UIController(QObject *parent) : QObject(parent)
     startMenu->show();
     mainWindow->show();
 
-    endMenu = new EndMenu();
+    endMenu = new EndGMenu();
     endMenu->hide();
 
     //Seeding the value for a random

@@ -37,7 +37,7 @@ private:
     StartMenu *startMenu;
 
     /*The end menu*/
-    EndMenu *endMenu;
+    EndGMenu *endMenu;
 
     /*This timer is used for controlling the creation of flowers*/
     QTimer *cFlowerTimer;
