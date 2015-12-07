@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>StartMenu</class>
- <widget class="QDialog" name="StartMenu">
+ <class>DifficultyDialog</class>
+ <widget class="QDialog" name="DifficultyDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>225</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>StartMenu</string>
   </property>
   <widget class="QLabel" name="titleLabel">
    <property name="geometry">
@@ -48,12 +48,12 @@
     <item>
      <widget class="QLabel" name="difficultyLabel">
       <property name="text">
-       <string>Difficulty:</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Difficulty:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QComboBox" name="difficultyComboBox">
+     <widget class="QComboBox" name="dComboBox">
       <property name="currentText">
        <string/>
       </property>
@@ -64,8 +64,8 @@
   <widget class="QPushButton" name="startButton">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>240</y>
+     <x>150</x>
+     <y>170</y>
      <width>75</width>
      <height>23</height>
     </rect>
