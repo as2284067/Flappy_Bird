@@ -1,0 +1,168 @@
+\hypertarget{class_game_level}{}\section{Game\+Level Class Reference}
+\label{class_game_level}\index{Game\+Level@{Game\+Level}}
+
+
+The \hyperlink{class_game_level}{Game\+Level} class.  
+
+
+
+
+{\ttfamily \#include $<$gamelevel.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_game_level_acab80c7bfab374236d1a5bd55a10ff7e}{get\+Level\+N} () const 
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_level_acab80c7bfab374236d1a5bd55a10ff7e}{Game\+Level\+::get\+Level\+N}. \end{DoxyCompactList}\item 
+int \hyperlink{class_game_level_a5e06760f7b73f987f6fbb42f9a7ff89f}{get\+Id} () const 
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_level_a5e06760f7b73f987f6fbb42f9a7ff89f}{Game\+Level\+::get\+Id}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_game_level_aecafb8ea53d8fbc0c354db3e7b877848}{set\+Level\+N} (const Q\+String \&value)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_level_aecafb8ea53d8fbc0c354db3e7b877848}{Game\+Level\+::set\+Level\+N}. \end{DoxyCompactList}\item 
+static void \hyperlink{class_game_level_a15dbe223c7d2d2cf22bf869c44b7cc35}{set\+Id} (int value)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_level_a15dbe223c7d2d2cf22bf869c44b7cc35}{Game\+Level\+::set\+Id}. \end{DoxyCompactList}\item 
+static \hyperlink{class_game_level}{Game\+Level} \hyperlink{class_game_level_abfd8683983588ee8343b26e194d493ac}{get\+Instance} ()
+\begin{DoxyCompactList}\small\item\em Game\+Level\+::get\+G\+Level. \end{DoxyCompactList}\item 
+static float \hyperlink{class_game_level_a3bad525afd79aa4653538b360e5b053d}{get\+Bird\+Pic\+Scalar} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_level_a3bad525afd79aa4653538b360e5b053d}{Game\+Level\+::get\+Bird\+Pic\+Scalar}. \end{DoxyCompactList}\item 
+static int \hyperlink{class_game_level_a9a15dd2831a62009c270eb9d7669a9d9}{get\+Flower\+Speed} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_level_a9a15dd2831a62009c270eb9d7669a9d9}{Game\+Level\+::get\+Flower\+Speed}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{class_game_level}{Game\+Level} \hyperlink{class_game_level_a4de2cb0a8609b8e9a76f64a1502a71de}{E\+A\+S\+Y}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_level_a4de2cb0a8609b8e9a76f64a1502a71de}{Game\+Level\+::\+E\+A\+S\+Y}. \end{DoxyCompactList}\item 
+\hypertarget{class_game_level_aaf2d9c7c8b6b88817451aa23442477c9}{}static const \hyperlink{class_game_level}{Game\+Level} \hyperlink{class_game_level_aaf2d9c7c8b6b88817451aa23442477c9}{M\+E\+D\+I\+U\+M}\label{class_game_level_aaf2d9c7c8b6b88817451aa23442477c9}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_level_aaf2d9c7c8b6b88817451aa23442477c9}{Game\+Level\+::\+M\+E\+D\+I\+U\+M}. \end{DoxyCompactList}\item 
+\hypertarget{class_game_level_adec4e386d38dfb062e733098696524a7}{}static const \hyperlink{class_game_level}{Game\+Level} \hyperlink{class_game_level_adec4e386d38dfb062e733098696524a7}{H\+A\+R\+D}\label{class_game_level_adec4e386d38dfb062e733098696524a7}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_level_adec4e386d38dfb062e733098696524a7}{Game\+Level\+::\+H\+A\+R\+D}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_game_level}{Game\+Level} class. 
+
+This class is implemented in form of combination of singleton and type-\/safe enum design patterns. It is used for managing the difficuty of a game , and the difficulty is defined base on the bird size and the flower speed. The class is simultaneously accessed by all U\+I components. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_game_level_a3bad525afd79aa4653538b360e5b053d}{}\index{Game\+Level@{Game\+Level}!get\+Bird\+Pic\+Scalar@{get\+Bird\+Pic\+Scalar}}
+\index{get\+Bird\+Pic\+Scalar@{get\+Bird\+Pic\+Scalar}!Game\+Level@{Game\+Level}}
+\subsubsection[{get\+Bird\+Pic\+Scalar()}]{\setlength{\rightskip}{0pt plus 5cm}float Game\+Level\+::get\+Bird\+Pic\+Scalar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_game_level_a3bad525afd79aa4653538b360e5b053d}
+
+
+\hyperlink{class_game_level_a3bad525afd79aa4653538b360e5b053d}{Game\+Level\+::get\+Bird\+Pic\+Scalar}. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_game_level_a9a15dd2831a62009c270eb9d7669a9d9}{}\index{Game\+Level@{Game\+Level}!get\+Flower\+Speed@{get\+Flower\+Speed}}
+\index{get\+Flower\+Speed@{get\+Flower\+Speed}!Game\+Level@{Game\+Level}}
+\subsubsection[{get\+Flower\+Speed()}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+Level\+::get\+Flower\+Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_game_level_a9a15dd2831a62009c270eb9d7669a9d9}
+
+
+\hyperlink{class_game_level_a9a15dd2831a62009c270eb9d7669a9d9}{Game\+Level\+::get\+Flower\+Speed}. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_game_level_a5e06760f7b73f987f6fbb42f9a7ff89f}{}\index{Game\+Level@{Game\+Level}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!Game\+Level@{Game\+Level}}
+\subsubsection[{get\+Id() const }]{\setlength{\rightskip}{0pt plus 5cm}int Game\+Level\+::get\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_game_level_a5e06760f7b73f987f6fbb42f9a7ff89f}
+
+
+\hyperlink{class_game_level_a5e06760f7b73f987f6fbb42f9a7ff89f}{Game\+Level\+::get\+Id}. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_game_level_abfd8683983588ee8343b26e194d493ac}{}\index{Game\+Level@{Game\+Level}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Game\+Level@{Game\+Level}}
+\subsubsection[{get\+Instance()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\+Level} Game\+Level\+::get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_game_level_abfd8683983588ee8343b26e194d493ac}
+
+
+Game\+Level\+::get\+G\+Level. 
+
+The singleton method \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_game_level_acab80c7bfab374236d1a5bd55a10ff7e}{}\index{Game\+Level@{Game\+Level}!get\+Level\+N@{get\+Level\+N}}
+\index{get\+Level\+N@{get\+Level\+N}!Game\+Level@{Game\+Level}}
+\subsubsection[{get\+Level\+N() const }]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Game\+Level\+::get\+Level\+N (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_game_level_acab80c7bfab374236d1a5bd55a10ff7e}
+
+
+\hyperlink{class_game_level_acab80c7bfab374236d1a5bd55a10ff7e}{Game\+Level\+::get\+Level\+N}. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_game_level_a15dbe223c7d2d2cf22bf869c44b7cc35}{}\index{Game\+Level@{Game\+Level}!set\+Id@{set\+Id}}
+\index{set\+Id@{set\+Id}!Game\+Level@{Game\+Level}}
+\subsubsection[{set\+Id(int value)}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Level\+::set\+Id (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_game_level_a15dbe223c7d2d2cf22bf869c44b7cc35}
+
+
+\hyperlink{class_game_level_a15dbe223c7d2d2cf22bf869c44b7cc35}{Game\+Level\+::set\+Id}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_game_level_aecafb8ea53d8fbc0c354db3e7b877848}{}\index{Game\+Level@{Game\+Level}!set\+Level\+N@{set\+Level\+N}}
+\index{set\+Level\+N@{set\+Level\+N}!Game\+Level@{Game\+Level}}
+\subsubsection[{set\+Level\+N(const Q\+String \&value)}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Level\+::set\+Level\+N (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_game_level_aecafb8ea53d8fbc0c354db3e7b877848}
+
+
+\hyperlink{class_game_level_aecafb8ea53d8fbc0c354db3e7b877848}{Game\+Level\+::set\+Level\+N}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_game_level_a4de2cb0a8609b8e9a76f64a1502a71de}{}\index{Game\+Level@{Game\+Level}!E\+A\+S\+Y@{E\+A\+S\+Y}}
+\index{E\+A\+S\+Y@{E\+A\+S\+Y}!Game\+Level@{Game\+Level}}
+\subsubsection[{E\+A\+S\+Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\+Level} const Game\+Level\+::\+E\+A\+S\+Y\hspace{0.3cm}{\ttfamily [static]}}\label{class_game_level_a4de2cb0a8609b8e9a76f64a1502a71de}
+
+
+\hyperlink{class_game_level_a4de2cb0a8609b8e9a76f64a1502a71de}{Game\+Level\+::\+E\+A\+S\+Y}. 
+
+Reference to the function declaration 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gamelevel.\+h\item 
+gamelevel.\+cpp\end{DoxyCompactItemize}

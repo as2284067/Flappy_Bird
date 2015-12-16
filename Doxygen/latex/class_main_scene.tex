@@ -1,0 +1,184 @@
+\hypertarget{class_main_scene}{}\section{Main\+Scene Class Reference}
+\label{class_main_scene}\index{Main\+Scene@{Main\+Scene}}
+
+
+The \hyperlink{class_main_scene}{Main\+Scene} class This is the main graphics scene of the game It is used to manage all the moving items (the birds and flowers) as well as the background.  
+
+
+
+
+{\ttfamily \#include $<$mainscene.\+h$>$}
+
+Inheritance diagram for Main\+Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_scene}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_scene_a539e1c90b1c7f2e910d44cfd8ec45e1c}{Main\+Scene} (Q\+Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_scene_a539e1c90b1c7f2e910d44cfd8ec45e1c}{Main\+Scene\+::\+Main\+Scene}. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_scene_a204ffd620222634956a901d7cbc39a14}{create\+Flowers} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_scene_a204ffd620222634956a901d7cbc39a14}{Main\+Scene\+::create\+Flowers}. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_scene_a34c634cb6edca409b8818b90a6c8f6a3}{move\+Flowers} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_scene_a34c634cb6edca409b8818b90a6c8f6a3}{Main\+Scene\+::move\+Flowers}. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_scene_a9686cf85301e0adf9fdf6fcfac8e1d54}{play} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_scene_a9686cf85301e0adf9fdf6fcfac8e1d54}{Main\+Scene\+::play}. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_scene_a2da7b3de66fab703d85ab25aa899f12b}{free\+Fall\+Bird} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_scene_a2da7b3de66fab703d85ab25aa899f12b}{Main\+Scene\+::free\+Fall\+Bird}. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_scene_a61958a11669a25126ac32ac70a758c11}{fly\+Up\+Bird} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_scene_a61958a11669a25126ac32ac70a758c11}{Main\+Scene\+::fly\+Up\+Bird}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_main_scene_a4b2d78977f11b426c324f66277546360}{has\+Collision} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_scene_a4b2d78977f11b426c324f66277546360}{Main\+Scene\+::has\+Collision}. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_scene_a415d733af1f33b9af9f94042083472aa}{check\+For\+Collision} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_scene_a415d733af1f33b9af9f94042083472aa}{Main\+Scene\+::check\+For\+Collision}. \end{DoxyCompactList}\item 
+\hypertarget{class_main_scene_ab5f3fb8e1e0b77b63231ea976fe1eb25}{}void \hyperlink{class_main_scene_ab5f3fb8e1e0b77b63231ea976fe1eb25}{restart\+Scene} ()\label{class_main_scene_ab5f3fb8e1e0b77b63231ea976fe1eb25}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_scene_ab5f3fb8e1e0b77b63231ea976fe1eb25}{Main\+Scene\+::restart\+Scene}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_scene_a8ba16fde46c54c2fa4098d03c9ffd332}{draw\+Background} (Q\+Painter $\ast$painter, const Q\+Rect\+F \&rect)
+\begin{DoxyCompactList}\small\item\em draw\+Background \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_main_scene}{Main\+Scene} class This is the main graphics scene of the game It is used to manage all the moving items (the birds and flowers) as well as the background. 
+
+Authors\+: Hoa Huynh, Abel Salazar, Tiffany Pan 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_main_scene_a539e1c90b1c7f2e910d44cfd8ec45e1c}{}\index{Main\+Scene@{Main\+Scene}!Main\+Scene@{Main\+Scene}}
+\index{Main\+Scene@{Main\+Scene}!Main\+Scene@{Main\+Scene}}
+\subsubsection[{Main\+Scene(\+Q\+Object $\ast$parent=0)}]{\setlength{\rightskip}{0pt plus 5cm}Main\+Scene\+::\+Main\+Scene (
+\begin{DoxyParamCaption}
+\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_main_scene_a539e1c90b1c7f2e910d44cfd8ec45e1c}
+
+
+\hyperlink{class_main_scene_a539e1c90b1c7f2e910d44cfd8ec45e1c}{Main\+Scene\+::\+Main\+Scene}. 
+
+The main constructor is uesed for initating all components in this scene
+
+Reference to the declaration of this constructor 
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_main_scene_a415d733af1f33b9af9f94042083472aa}{}\index{Main\+Scene@{Main\+Scene}!check\+For\+Collision@{check\+For\+Collision}}
+\index{check\+For\+Collision@{check\+For\+Collision}!Main\+Scene@{Main\+Scene}}
+\subsubsection[{check\+For\+Collision()}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Scene\+::check\+For\+Collision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_main_scene_a415d733af1f33b9af9f94042083472aa}
+
+
+\hyperlink{class_main_scene_a415d733af1f33b9af9f94042083472aa}{Main\+Scene\+::check\+For\+Collision}. 
+
+Reference to the declaration of this function \hypertarget{class_main_scene_a204ffd620222634956a901d7cbc39a14}{}\index{Main\+Scene@{Main\+Scene}!create\+Flowers@{create\+Flowers}}
+\index{create\+Flowers@{create\+Flowers}!Main\+Scene@{Main\+Scene}}
+\subsubsection[{create\+Flowers()}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Scene\+::create\+Flowers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_main_scene_a204ffd620222634956a901d7cbc39a14}
+
+
+\hyperlink{class_main_scene_a204ffd620222634956a901d7cbc39a14}{Main\+Scene\+::create\+Flowers}. 
+
+Reference to the declaration of this function \hypertarget{class_main_scene_a8ba16fde46c54c2fa4098d03c9ffd332}{}\index{Main\+Scene@{Main\+Scene}!draw\+Background@{draw\+Background}}
+\index{draw\+Background@{draw\+Background}!Main\+Scene@{Main\+Scene}}
+\subsubsection[{draw\+Background(\+Q\+Painter $\ast$painter, const Q\+Rect\+F \&rect)}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Scene\+::draw\+Background (
+\begin{DoxyParamCaption}
+\item[{Q\+Painter $\ast$}]{painter, }
+\item[{const Q\+Rect\+F \&}]{rect}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_main_scene_a8ba16fde46c54c2fa4098d03c9ffd332}
+
+
+draw\+Background 
+
+\hyperlink{class_main_scene_a8ba16fde46c54c2fa4098d03c9ffd332}{Main\+Scene\+::draw\+Background}.
+
+Overriding function from Q\+Graphics\+Scene This function will draw the background being one of three layers of the scene 
+\begin{DoxyParams}{Parameters}
+{\em painter} & \\
+\hline
+{\em rect} & Reference to the declaration of this function \\
+\hline
+{\em painter} & \\
+\hline
+{\em rect} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_main_scene_a61958a11669a25126ac32ac70a758c11}{}\index{Main\+Scene@{Main\+Scene}!fly\+Up\+Bird@{fly\+Up\+Bird}}
+\index{fly\+Up\+Bird@{fly\+Up\+Bird}!Main\+Scene@{Main\+Scene}}
+\subsubsection[{fly\+Up\+Bird()}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Scene\+::fly\+Up\+Bird (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_main_scene_a61958a11669a25126ac32ac70a758c11}
+
+
+\hyperlink{class_main_scene_a61958a11669a25126ac32ac70a758c11}{Main\+Scene\+::fly\+Up\+Bird}. 
+
+Reference to the declaration of this function \hypertarget{class_main_scene_a2da7b3de66fab703d85ab25aa899f12b}{}\index{Main\+Scene@{Main\+Scene}!free\+Fall\+Bird@{free\+Fall\+Bird}}
+\index{free\+Fall\+Bird@{free\+Fall\+Bird}!Main\+Scene@{Main\+Scene}}
+\subsubsection[{free\+Fall\+Bird()}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Scene\+::free\+Fall\+Bird (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_main_scene_a2da7b3de66fab703d85ab25aa899f12b}
+
+
+\hyperlink{class_main_scene_a2da7b3de66fab703d85ab25aa899f12b}{Main\+Scene\+::free\+Fall\+Bird}. 
+
+Reference to the declaration of this function \hypertarget{class_main_scene_a4b2d78977f11b426c324f66277546360}{}\index{Main\+Scene@{Main\+Scene}!has\+Collision@{has\+Collision}}
+\index{has\+Collision@{has\+Collision}!Main\+Scene@{Main\+Scene}}
+\subsubsection[{has\+Collision()}]{\setlength{\rightskip}{0pt plus 5cm}bool Main\+Scene\+::has\+Collision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_main_scene_a4b2d78977f11b426c324f66277546360}
+
+
+\hyperlink{class_main_scene_a4b2d78977f11b426c324f66277546360}{Main\+Scene\+::has\+Collision}. 
+
+Reference to the declaration of this function \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_main_scene_a34c634cb6edca409b8818b90a6c8f6a3}{}\index{Main\+Scene@{Main\+Scene}!move\+Flowers@{move\+Flowers}}
+\index{move\+Flowers@{move\+Flowers}!Main\+Scene@{Main\+Scene}}
+\subsubsection[{move\+Flowers()}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Scene\+::move\+Flowers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_main_scene_a34c634cb6edca409b8818b90a6c8f6a3}
+
+
+\hyperlink{class_main_scene_a34c634cb6edca409b8818b90a6c8f6a3}{Main\+Scene\+::move\+Flowers}. 
+
+Reference to the declaration of this function \hypertarget{class_main_scene_a9686cf85301e0adf9fdf6fcfac8e1d54}{}\index{Main\+Scene@{Main\+Scene}!play@{play}}
+\index{play@{play}!Main\+Scene@{Main\+Scene}}
+\subsubsection[{play()}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Scene\+::play (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_main_scene_a9686cf85301e0adf9fdf6fcfac8e1d54}
+
+
+\hyperlink{class_main_scene_a9686cf85301e0adf9fdf6fcfac8e1d54}{Main\+Scene\+::play}. 
+
+Reference to the declaration of this function 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainscene.\+h\item 
+mainscene.\+cpp\end{DoxyCompactItemize}
